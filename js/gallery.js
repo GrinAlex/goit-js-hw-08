@@ -93,7 +93,7 @@ const onImgCardClick = event => {
   }
 
   const largeCardImg = event.target.dataset.source;
-  const imgAlt = event.target.attributes.alt.value;
+  const imgAlt = event.target.alt;
 
   const instance = basicLightbox.create(`
     <img src="${largeCardImg}" alt="${imgAlt}" width="800" height="600">
